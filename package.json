@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "name": "kang_yan_portfolio",
+  "description": "portfolio site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "gulp-imagemin": "^8.0.0",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.43.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lightbluecactus/Kang_Yan_Portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Ranshadow (Yan Kang)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lightbluecactus/Kang_Yan_Portfolio/issues"
+  },
+  "homepage": "https://github.com/lightbluecactus/Kang_Yan_Portfolio#readme"
+}
