@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, width=device-width">
+		<title>Rainshadow Portfolio</title>
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+		
+	</head>
+	<body>
+		<!-- Content Goes Here -->
+		<h1 class="hidden">Rainshadow Portfolio</h1>
+		<div id="container">
+
+			<header>
+				<h2 class="hidden">Main header</h2>
+				<img src="images/logo-nav.svg" alt="logo icon - click to open navagation">
+				<nav>
+					<h2 class="hidden">Main Navigation</h2>				
+					<ul>
+                        <li><a href="#" class="closeBtn">&times;</a></li>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<main>
+				
+                <h3>If you have any question or just want to talk with
+                    me, you are always welcomed to leave a message
+                    in this page. I'll reply back soon.
+                </h3>
+                
+                <section id="contactInfo">
+                    <h2 class="hidden">Fill in your contact information</h2>
+                    <form id="contactForm" action="form.php" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" required id="name" size="30" placeholder="Enter your name">
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" required id="email" size="30" placeholder="Enter your email">
+
+                        <label for="comments">Comments:</label>
+                        <textarea id="comments" required size="50"></textarea>
+
+                        <h2>Verify</h2>
+                        <label for="human">What comes after winter?</label>
+                        <input type="text" id="human" required size="30" placeholder="To help reduce spam">
+
+                        <input type="submit" value="Send" id="btnSend">
+    
+                    </form>
+                </section>
+
+                <section id="contactMedia">
+                    <div>
+                        <h3>Or reach out to my social media...</h3>
+                        <ul id="socialMediaContact">
+                            <li><a href="https://twitter.com/Rainshadowww?t=ogJWKXb-VeFFsTvGT2N1ag&s=09"><img src="images/media-twitter.svg" alt="twitter"></a></li>
+					        <li><a href="https://github.com/lightbluecactus"><img src="images/media-github.svg" alt="github"></a></li>
+					        <li><a href="#"><img src="images/media-instagram.svg" alt="instagram"></a></li>
+                        </ul>
+                    </div>
+                    <img src="images/knitting.png" alt="knitting decoration">
+                </section>
+
+
+            </main>
+
+		</div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+		<script src="js/main.js" type="module" defer></script>
+	</body>
+
+</html>
