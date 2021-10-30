@@ -1,0 +1,25 @@
+<svg id="btn-right" xmlns="http://www.w3.org/2000/svg" width="85" height="85" viewBox="0 0 85 85">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="椭圆_5" data-name="椭圆 5" class="cls-1">
+    <circle class="cls-2" cx="42.5" cy="42.5" r="42.5"/>
+    <circle class="cls-3" cx="42.5" cy="42.5" r="41.5"/>
+  </g>
+  <line id="直线_7" data-name="直线 7" class="cls-1" x2="50" transform="translate(15.5 44.5)"/>
+  <line id="直线_8" data-name="直线 8" class="cls-1" x1="23" y2="25" transform="translate(42.5 44)"/>
+  <line id="直线_9" data-name="直线 9" class="cls-1" x1="23" y1="25" transform="translate(42.5 19.5)"/>
+</svg>
