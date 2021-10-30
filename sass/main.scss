@@ -5,3 +5,13 @@
 @import "modules/queries";
 
 @import "modules/defaults";
+
+// general styles
+
+.hidden{
+	display: none;
+}
+
+#container{
+	background-color: $bckgrd-color;
+}
