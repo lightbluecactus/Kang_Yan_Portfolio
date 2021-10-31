@@ -1,0 +1,77 @@
+ #projectNavCon {
+     display: flex;
+     flex-direction: column;
+     position: fixed;
+     left: 0;
+     top: 35vh;
+ }
+
+ #projectNavCon img {
+     margin-bottom: 10px;
+     margin-left: -20px;
+     transition: all .5s ease-out;
+     cursor: pointer;
+ }
+
+ #projectNavCon img:hover {
+     margin-left: 0;
+     filter: brightness(1.5);
+ }
+
+ #btnLeft {
+     position: fixed;
+     bottom: 10vh;
+     left: 60px;
+     width: 75px;
+ }
+
+ #btnRight {
+    position: fixed;
+    bottom: 10vh;
+    right: 60px;
+    width: 75px;
+}
+
+#projectPanel {
+    margin-left: 20vw;
+    margin-right: 13vw;
+}
+
+#projPic1 {
+    margin-top: 20vh;
+    margin-bottom: 15vh;
+}
+
+#projTitle {
+    font-family: $sub-font;
+    font-size: 60px;
+    padding-left: 30px;
+    border-left: 10px solid $sub-color;
+    margin-bottom: 10vh;
+}
+
+#projectPanel p {
+    line-height: 36px;
+}
+
+#projPart2 {
+    margin: 10vh auto;
+    display: flex;
+}
+
+#projPart2 p {
+    margin-left: 30px;
+}
+
+#projPart3 img {
+    padding-left: 10vw;
+    border-left: 10px solid $sub-color;
+    margin-bottom: 10vh;
+}
+
+#projPart3 {
+    padding-bottom: 10vh;
+    background-color: $bckgrd-color;
+}
+
+

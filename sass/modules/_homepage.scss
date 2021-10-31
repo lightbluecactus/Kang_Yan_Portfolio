@@ -1,0 +1,151 @@
+#socialMediaHeader {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    top: 60px;
+    left: 135px;
+
+}
+
+#socialMediaHeader img {
+    height: 25px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+#socialMediaHeader img:hover {
+    padding: 2px;
+}
+
+#hero {
+    background: url('../images/hero.jpg') center no-repeat;
+	background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#heroLogo {
+    margin-top: 50vh;
+    margin-left: auto;
+    margin-right: 10vw;
+    max-width: 100%;
+}
+
+// #logoCon {
+//     position: relative;
+// }
+
+// #heroLogo::before {
+//     content:'';
+//     height: 30px;
+//     width: 30px;
+//     background-color: $sub-color;
+//     position: absolute;
+//     right: 20px;
+// }
+
+#hero h2 {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: 10vw;
+}
+
+#btnPlay {
+    margin: 20px 10vw 10vh auto;
+    max-width: 75px;
+    cursor: pointer;
+}
+
+#homeProjects {
+    margin: 20vh 11vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#project1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#project1 p {
+    width: 25vw;
+    line-height: 36px;
+}
+
+#project1:last-child {
+    margin-left: auto;
+}
+// cannot scale properly
+
+#projectsTitle {
+    display: flex;
+    align-items: center;
+    width: 78vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+#projectsTitle h2 {
+    font-family: $sub-font;
+    font-size: 48px;
+}
+
+#homeDecoLine {
+    width: 25vw;
+    height: 20px;
+    margin-left: 6vw;
+    background-color: $sub-color;
+}
+
+#project2 {
+    width: 50vw;
+}
+
+#project3 {
+    width: 22vw;
+    margin-left: auto;
+}
+
+#project2 p, #project3 p {
+    margin-top: 40px;
+    line-height: 36px;
+}
+
+footer {
+    margin-top: 15vh;
+    margin-left: 11vw;
+    margin-right: 11vw;
+    padding-bottom: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer img {
+    clip-path: circle(50% at 50% 50%);
+}
+
+footer p {
+    width: 30vw;
+    font-size: 24px;
+    margin-left: 10vw;
+}
+
+footer ul {
+    margin-left: auto;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer ul img {
+    width: 40px;
+    height: 40px;
+}

@@ -3,9 +3,34 @@
 
 (()=>{
 
-	const	projectNav = document.querySelectorAll(".projectNav");
+	const	projectNav = document.querySelectorAll(".projectNav"),
+			logoNav = document.querySelector("#logoNav"),
+			mainNav = document.querySelector("#mainNav"),
+			main = document.querySelector("main");
 
-		function buildData(data) {
+	let projectInfo;
+	let toggle = false;
+
+
+	function toggleNav() {
+		if(toggle){
+			toggle = false;
+			main.style.marginLeft = "0";
+			mainNav.style.display = "none";
+			mainNav.style.opacity = "0%";
+			mainNav.style.width = "0";
+		} else {
+			toggle = true;
+			main.style.marginLeft = "240px";
+			mainNav.style.display = "block";
+			mainNav.style.opacity = "100%";
+			mainNav.style.width = "240px";
+		}
+	}
+
+
+
+	function buildData(data) {
 		projectInfo = data;
 		return projectInfo;
 	}
@@ -16,7 +41,6 @@
 		console.log(key);
 		console.log(projectInfo);	
 		
-		debugger;
 
 		let projPic1 = document.querySelector("#projPic1"),
 			projTitle = document.querySelector("#projTitle"),
@@ -44,7 +68,11 @@
 
 	getData(buildData);
 
+
+	logoNav.addEventListener("click", toggleNav);
+	
 	projectNav.forEach(button => button.addEventListener("click", showData));
+
 
 })();
 
