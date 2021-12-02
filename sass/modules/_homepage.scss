@@ -12,12 +12,6 @@
 
 #socialMediaHeader img {
     height: 25px;
-    cursor: pointer;
-    transition: all .3s ease-in;
-}
-
-#socialMediaHeader img:hover {
-    padding: 2px;
 }
 
 #hero {
@@ -34,14 +28,14 @@
     margin-left: auto;
     margin-right: 10vw;
     max-width: 100%;
+    border-left: 10px solid $sub-color;
+    padding-left: 30px;
+    // position: relative;
 }
-
-// #logoCon {
-//     position: relative;
-// }
 
 // #heroLogo::before {
 //     content:'';
+//     display: block;
 //     height: 30px;
 //     width: 30px;
 //     background-color: $sub-color;
@@ -50,6 +44,7 @@
 // }
 
 #hero h2 {
+    font-size: 22px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: 10vw;
@@ -62,59 +57,33 @@
 }
 
 #homeProjects {
+    // background: url('../images/home-projects.jpg') center no-repeat;
+    // background-size: cover;
     margin: 20vh 11vw;
     display: flex;
-    flex-wrap: wrap;
-}
-
-#project1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#project1 p {
-    width: 25vw;
-    line-height: 36px;
-}
-
-#project1:last-child {
-    margin-left: auto;
-}
-// cannot scale properly
-
-#projectsTitle {
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 78vw;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    justify-content: flex-end;
+    position: relative;
 }
 
-#projectsTitle h2 {
-    font-family: $sub-font;
-    font-size: 48px;
+#homeProjects a {
+    color: $main-color;
 }
 
-#homeDecoLine {
-    width: 25vw;
-    height: 20px;
-    margin-left: 6vw;
-    background-color: $sub-color;
+#homeProjects h2 {
+    font-size: 32px;
+    padding: 15px 20px;
+    border: 2px solid $main-color;
+    border-radius: 5px;
+    position: absolute;
+    top: 150px;
+    transition: all .3s ease-in;
 }
 
-#project2 {
-    width: 50vw;
-}
-
-#project3 {
-    width: 22vw;
-    margin-left: auto;
-}
-
-#project2 p, #project3 p {
-    margin-top: 40px;
-    line-height: 36px;
+// to restrict the width of image
+#homeProjects img {
+    width: 100%;
 }
 
 footer {
@@ -131,10 +100,14 @@ footer img {
     clip-path: circle(50% at 50% 50%);
 }
 
+#profileHome {
+    margin-right: 3vw;
+}
+
 footer p {
     width: 30vw;
     font-size: 24px;
-    margin-left: 10vw;
+    line-height: 36px;
 }
 
 footer ul {
