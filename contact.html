@@ -30,30 +30,36 @@
                     <h2 class="hidden">Main header</h2>
                     <img src="images/logo-nav.svg" alt="logo icon - click to open navagation" id="logoNav">
                 </header>
-				
+
+                <div id="contactCon">
                 <h3>If you have any question or just want to talk with
-                    me, you are always welcomed to leave a message
-                    in this page. I'll reply back soon.
+                    <br>me, you are always welcomed to leave a message
+                    <br>in this page. I'll reply back soon.
                 </h3>
                 
                 <section id="contactInfo">
                     <h2 class="hidden">Fill in your contact information</h2>
                     <form id="contactForm" action="form.php" method="post">
-                        <label for="name">Name:</label>
-                        <input type="text" required id="name" size="30" placeholder="Enter your name">
+                        <div class="formInline">
+                            <label for="name">Name:</label>
+                            <input type="text" required id="name" size="20" placeholder="Enter your name">
+                        </div>
+                        <div class="formInline">
+                            <label for="email">Email:</label>
+                            <input type="email" required id="email" size="20" placeholder="Enter your email">
+                        </div>                        
+                        <div id="formComment">
+                            <label for="comments">Comments:</label>
+                            <textarea id="comments" required size="50"></textarea>
+                        </div>
                         
-                        <label for="email">Email:</label>
-                        <input type="email" required id="email" size="30" placeholder="Enter your email">
-
-                        <label for="comments">Comments:</label>
-                        <textarea id="comments" required size="50"></textarea>
-
-                        <h2>Verify</h2>
-                        <label for="human">What comes after winter?</label>
-                        <input type="text" id="human" required size="30" placeholder="To help reduce spam">
-
+                        <div id="formVerify">
+                            <h2>Verify</h2>
+                            <label for="human">What comes after winter?</label>
+                            <input type="text" id="human" required size="25" placeholder="To help reduce spam">
+                        </div>
+                        
                         <input type="submit" value="Send" id="btnSend">
-    
                     </form>
                 </section>
 
@@ -61,14 +67,14 @@
                     <div>
                         <h3>Or reach out to my social media...</h3>
                         <ul id="socialMediaContact">
-                            <li><a href="https://twitter.com/Rainshadowww?t=ogJWKXb-VeFFsTvGT2N1ag&s=09"><img src="images/media-twitter.svg" alt="twitter"></a></li>
-					        <li><a href="https://github.com/lightbluecactus"><img src="images/media-github.svg" alt="github"></a></li>
-					        <li><a href="#"><img src="images/media-instagram.svg" alt="instagram"></a></li>
+                            <li><a href="https://twitter.com/Rainshadowww?t=ogJWKXb-VeFFsTvGT2N1ag&s=09"><img src="images/media-twitter.svg" alt="twitter" class="svgIcon"></a></li>
+					        <li><a href="https://github.com/lightbluecactus"><img src="images/media-github.svg" alt="github" class="svgIcon"></a></li>
+					        <li><a href="#"><img src="images/media-instagram.svg" alt="instagram" class="svgIcon"></a></li>
                         </ul>
                     </div>
                     <img src="images/knitting.png" alt="knitting decoration">
                 </section>
-
+            </div> <!--end of contactCon-->
 
             </main>
 

@@ -6,12 +6,12 @@
       }
 
       .cls-1 {
-        stroke: #fff;
+        stroke: #a81b8d;
         stroke-width: 2px;
       }
 
       .cls-2 {
-        fill: #fff;
+        fill: #a81b8d;
       }
 
       .cls-3 {
@@ -19,7 +19,7 @@
       }
     </style>
   </defs>
-  <g id="instagram" transform="translate(-951 -2241)">
+  <g id="media-instagram" transform="translate(-951 -2241)">
     <g id="矩形_17" data-name="矩形 17" class="cls-1" transform="translate(951 2241)">
       <rect class="cls-3" width="50" height="50" rx="25"/>
       <rect class="cls-4" x="1" y="1" width="48" height="48" rx="24"/>
