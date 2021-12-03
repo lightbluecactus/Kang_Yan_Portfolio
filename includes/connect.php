@@ -1,7 +1,7 @@
 <?php 
     $db_dsn = array( 
-        'host' => 'localhost', // this will change when going live
-        'dbname' => 'newProfData', // update this with your database name
+        'host' => 'localhost', // this will change when you go live
+        'dbname' => 'db_portfolio', // update this with your database name
         'charset' => 'utf8'
     );
 
@@ -10,9 +10,9 @@
     //This is the DB credentials
 
     $db_user = 'root';
-    $db_pass = ''; // windows users leave this blank / mac password = root
+    $db_pass = ''; // windows users leave this blank
 
-    try{
+    try {
         $pdo = new PDO($dsn, $db_user, $db_pass);
         // var_dump($pdo);
         // echo (in this case) is almost like console.log

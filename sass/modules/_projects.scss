@@ -1,3 +1,7 @@
+#projectCon {
+    min-height: 100vh;
+}
+ 
  #projectNavCon {
      display: flex;
      flex-direction: column;
@@ -18,25 +22,26 @@
      filter: brightness(1.5);
  }
 
- #btnLeft {
-     position: fixed;
-     bottom: 10vh;
-     left: 60px;
-     width: 75px;
-     cursor: pointer;
- }
+//  #btnLeft {
+//      position: fixed;
+//      bottom: 10vh;
+//      left: 60px;
+//      width: 75px;
+//      cursor: pointer;
+//  }
 
- #btnRight {
-    position: fixed;
-    bottom: 10vh;
-    right: 60px;
-    width: 75px;
-    cursor: pointer;
-}
+//  #btnRight {
+//     position: fixed;
+//     bottom: 10vh;
+//     right: 60px;
+//     width: 75px;
+//     cursor: pointer;
+// }
 
 #projectPanel {
     margin-left: 20vw;
     margin-right: 13vw;
+    display: none;
 }
 
 #projPic1 {
@@ -65,6 +70,10 @@
     margin-left: 30px;
 }
 
+#projPic2 {
+    max-width: 300px;
+}
+
 #projPart3 img {
     padding-left: 10vw;
     border-left: 10px solid $sub-color;
@@ -76,4 +85,20 @@
     background-color: $bckgrd-color;
 }
 
+#projVideo {
+    width: 67vw;
+}
+
+#projPart3 p {
+    margin-top: 10vh;
+}
+
+#galleryCon {
+    margin-top: 10vh;
+}
+
+#galleryCon img {
+    margin: 0;
+    padding: 0;
+}
 

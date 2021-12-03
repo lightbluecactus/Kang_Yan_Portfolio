@@ -17,6 +17,10 @@
 	display: none;
 }
 
+.visible { 
+    display: block !important; 
+}
+
 #container{
 	background-color: $bckgrd-color;
 	width: 100%;
@@ -87,4 +91,11 @@ main
 	filter: brightness(1);
 	filter: saturate(1);
 	filter: grayscale(0);
+}
+
+footer {
+	text-align: center;
+	color: $main-color;
+	margin-top: 60px;
+	padding-bottom: 30px;
 }
