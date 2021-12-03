@@ -1,15 +1,15 @@
  #contactCon {
      display: flex;
-     flex-direction: row;
+     flex-direction: column;
      flex-wrap: wrap;
      width: 100%;
-     margin-left: 15vw;
-     margin-right: 11vw;
+     margin-left: 22vw;
+     margin-right: 6vw;
  }
 
  #contactCon h3 {
      width: 70vw;
-     font-size: 20px;
+     font-size: 16px;
      line-height: 28px;
      margin-top: 20vh;
      margin-bottom: 10vh;
@@ -21,8 +21,7 @@
 
  #contactInfo label, legend {
      font-family: $sub-font;
-     font-size: 22px;
-     padding-right: 15px;
+     font-size: 18px;
  }
 
  legend {
@@ -42,7 +41,7 @@
     background-color: rgba(0,0,0,0);
     height: 30px;
     color: $sub-color;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 40px;
  }
 
@@ -51,7 +50,7 @@
  }
 
  #comment {
-     width: 25vw;
+     width: 50vw;
  }
 
  ::placeholder { 
@@ -81,20 +80,25 @@
   }
 
  #contactMediaCon {
-      width: 45%;
-      margin-top: -180px;
-      margin-left: 10vw;
-  }
+      width: 30%;
+      position: absolute;
+      top: 35vh;
+      right: 0;
+}
 
  #contaceMedia {
       background-color: rgba(168, 27, 141, 0.65);
-      width: 45vw;
+      width: 30vw;
       margin-bottom: 20vh;
+      padding-right: 200px;
+      overflow: hidden;
   }
 
 #contaceMedia h3 {
-      padding-top: 20px;
-      padding-left: 30px;
+    font-size: 16px;
+    width: 25vw;
+    padding-top: 20px;
+    padding-left: 30px;
   }
 
 #socialMediaContact {
@@ -105,11 +109,63 @@
 }
 
 #socialMediaContact img {
-    width: 40px;
+    width: 25px;
     margin: 0 10px;
 }
 
 #contactDeco {
-    margin-left: 100px;
+    display: none;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    #contactCon {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 15vw;
+        margin-right: 11vw;
+    }
+
+    #contactCon h3 {
+        width: 70vw;
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 20vh;
+        margin-bottom: 10vh;
+    }
+
+    #contactInfo label, legend {
+        font-size: 22px;
+        padding-right: 15px;
+    }
+    #contactInfo input,  #contactInfo textarea {
+        font-size: 18px;
+    }
+
+    #comment {
+        width: 25vw;
+    }
+
+    #contactMediaCon {
+        width: 45%;
+    }
+
+    #contaceMedia h3 {
+        font-size: 18px;
+        width: 40vw;
+    }
+
+    #socialMediaContact img {
+        width: 40px;
+    }
+
+    #contactDeco {
+        display: block;
+        margin-left: 100px;
+    }
 }
   

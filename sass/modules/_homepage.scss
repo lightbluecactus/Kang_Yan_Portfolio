@@ -5,9 +5,8 @@
     justify-content: space-between;
     align-items: flex-start;
     position: absolute;
-    top: 60px;
-    left: 135px;
-
+    top: 20px;
+    left: 100px;
 }
 
 #socialMediaHeader img {
@@ -24,10 +23,10 @@
 }
 
 #heroLogo {
-    margin-top: 50vh;
+    margin-top: 45vh;
     margin-left: auto;
     margin-right: 10vw;
-    max-width: 100%;
+    max-width: 60%;
     border-left: 10px solid $sub-color;
     padding-left: 30px;
     // position: relative;
@@ -44,7 +43,7 @@
 // }
 
 #hero h2 {
-    font-size: 22px;
+    font-size: 18px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: 10vw;
@@ -54,7 +53,7 @@
 
 #btnPlay {
     margin: 20px 10vw 10vh auto;
-    max-width: 75px;
+    max-width: 50px;
     cursor: pointer;
 }
 
@@ -93,9 +92,10 @@
 }
 
 .homeLightbox video {
-     max-width: 65%;
-     z-index: 5;
+     max-width: 100%;
+     z-index: 15;
      padding-top: 10vh;
+     padding-bottom: 50vh;
 }
 //--------end of video lightbox-----
 
@@ -115,12 +115,12 @@
 }
 
 #homeProjects h2 {
-    font-size: 32px;
-    padding: 15px 20px;
+    font-size: 24px;
+    padding: 9px 12px;
     border: 2px solid $main-color;
     border-radius: 5px;
     position: absolute;
-    top: 150px;
+    top: 75px;
     transition: all .3s ease-in;
 }
 
@@ -145,11 +145,12 @@
 
 #profileHome {
     margin-right: 3vw;
+    width: 90px;
 }
 
 #homeAction p {
     width: 30vw;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 36px;
 }
 
@@ -162,6 +163,56 @@
 }
 
 #homeAction ul img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+// media queries
+@media screen and (min-width: 768px) {
+    #socialMediaHeader {
+        top: 60px;
+        left: 135px;
+    }
+
+    #heroLogo {
+        max-width: 100%;
+    }
+
+    #hero h2 {
+        font-size: 22px;
+    }
+
+    #btnPlay {
+        max-width: 75px;
+    }
+
+    .homeLightbox video {
+        max-width: 65%;
+    }
+
+    #homeProjects h2 {
+        font-size: 32px;
+        padding: 15px 20px;
+        top: 150px;
+    }
+
+    #profileHome {
+        width: 160px;
+    }
+
+    #homeAction p {
+        font-size: 24px;
+    }
+
+    #homeAction ul {
+        height: 80px;
+    }
+
+    #homeAction ul img {
+        width: 40px;
+        height: 40px;
+    }
 }
