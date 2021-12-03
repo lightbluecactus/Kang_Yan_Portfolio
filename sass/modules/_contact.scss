@@ -1,53 +1,56 @@
  #contactCon {
      display: flex;
+     flex-direction: row;
      flex-wrap: wrap;
+     width: 100%;
      margin-left: 15vw;
      margin-right: 11vw;
  }
 
  #contactCon h3 {
      width: 70vw;
-     font-size: 24px;
-     line-height: 36px;
+     font-size: 20px;
+     line-height: 28px;
      margin-top: 20vh;
-     margin-bottom: 15vh;
+     margin-bottom: 10vh;
  }
 
  #contactInfo {
      width: 30vw;
-     display: flex;
  }
 
- #contactInfo label,  #contactInfo h2 {
+ #contactInfo label, legend {
      font-family: $sub-font;
-     font-size: 26px;
-     margin-bottom: 5vh;
+     font-size: 22px;
+     padding-right: 15px;
  }
+
+ legend {
+    margin-bottom: 20px;
+ }
+
+.radioChoice {
+    font-family: $main-font !important;
+    font-size: 18px !important;
+}
 
  #contactInfo input,  #contactInfo textarea {
     border-top: none;
 	border-left: none;
 	border-right: none;
-    border-bottom: 2px solid $main-color;
+    border-bottom: 2px solid $sub-color;
     background-color: rgba(0,0,0,0);
     height: 30px;
     color: $sub-color;
     font-size: 18px;
+    margin-bottom: 40px;
  }
 
  #contactInfo input:focus,  #contactInfo textarea:focus {
     outline: none;
  }
 
- .formInline {
-     margin-bottom: 5vh;
- }
-
- .formInline input {
-     margin-left: 20px;
- }
-
- #comments {
+ #comment {
      width: 25vw;
  }
 
@@ -62,25 +65,51 @@
   
   ::-ms-input-placeholder { 
     color: #8E8B97;
-  }
+  } 
 
-#formVerify h2 {
-    margin-top: 10vh;
-}
 
-#formVerify label {
-     font-size: 22px;
-}
-
-#btnSend {
+ #btnSend {
     display: block;
-    margin-top: 10vh;
+    margin-top: 25px;
     font-size: 22px;
-    color: $main-color;
     padding: 15px 20px;
-    border: 2px solid $main-color;
+    color: $main-color !important;
+    border-style: none !important;
+    border: 2px solid $main-color !important;
     border-radius: 5px;
     cursor: pointer;
   }
 
+ #contactMediaCon {
+      width: 45%;
+      margin-top: -180px;
+      margin-left: 10vw;
+  }
+
+ #contaceMedia {
+      background-color: rgba(168, 27, 141, 0.65);
+      width: 45vw;
+      margin-bottom: 20vh;
+  }
+
+#contaceMedia h3 {
+      padding-top: 20px;
+      padding-left: 30px;
+  }
+
+#socialMediaContact {
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+#socialMediaContact img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+#contactDeco {
+    margin-left: 100px;
+}
   

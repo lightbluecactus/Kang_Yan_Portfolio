@@ -39,32 +39,39 @@
                 
                 <section id="contactInfo">
                     <h2 class="hidden">Fill in your contact information</h2>
-                    <form id="contactForm" action="form.php" method="post">
-                        <div class="formInline">
-                            <label for="name">Name:</label>
-                            <input type="text" required id="name" size="20" placeholder="Enter your name">
-                        </div>
-                        <div class="formInline">
+                    <form id="contactForm" action="./includes/mail/send.php" method="post">
+                    
+                            <label for="firstname">First name:</label>
+                            <input type="text" required id="firstname" name="firstname" size="20" placeholder="Enter your first name">
+                            <br>
+                            <label for="lastname">Last name:</label>
+                            <input type="text" required id="lastname" name="lastname" size="20" placeholder="Enter your last name">
+                            <br>
                             <label for="email">Email:</label>
-                            <input type="email" required id="email" size="20" placeholder="Enter your email">
-                        </div>                        
-                        <div id="formComment">
-                            <label for="comments">Comments:</label>
-                            <textarea id="comments" required size="50"></textarea>
-                        </div>
-                        
-                        <div id="formVerify">
-                            <h2>Verify</h2>
-                            <label for="human">What comes after winter?</label>
-                            <input type="text" id="human" required size="25" placeholder="To help reduce spam">
-                        </div>
+                            <input type="email" required id="email" name="email" size="20" placeholder="Enter your email">
+                            <br>
+                            <fieldset>
+                                <legend>Choose a Topic: </legend>
+                                <input type="radio" id="topicChoice1" name="topic" value="info" checked>
+                                <label for="topicChoice1" class="radioChoice">Info Inquiry</label>
+                                <br>
+                                <input type="radio" id="topicChoice2" name="topic" value="works">
+                                <label for="topicChoice2" class="radioChoice">Works and Projects</label>
+                                <br>
+                                <input type="radio" id="topicChoice3" name="topic" value="chat">
+                                <label for="topicChoice3" class="radioChoice">Casual Chat</label>
+                            </fieldset>
+                            <label for="comment">Your Comments:</label>
+                            <br>
+                            <textarea id="comment" name="comment" required size="50"></textarea>
                         
                         <input type="submit" value="Send" id="btnSend">
+                        <input type="hidden" id="token" name="token">
                     </form>
                 </section>
 
-                <section id="contactMedia">
-                    <div>
+                <section id="contactMediaCon">
+                    <div id="contaceMedia">
                         <h3>Or reach out to my social media...</h3>
                         <ul id="socialMediaContact">
                             <li><a href="https://twitter.com/Rainshadowww?t=ogJWKXb-VeFFsTvGT2N1ag&s=09"><img src="images/media-twitter.svg" alt="twitter" class="svgIcon"></a></li>
@@ -72,7 +79,7 @@
 					        <li><a href="#"><img src="images/media-instagram.svg" alt="instagram" class="svgIcon"></a></li>
                         </ul>
                     </div>
-                    <img src="images/knitting.png" alt="knitting decoration">
+                    <img src="images/knitting.png" alt="knitting decoration" id="contactDeco">
                 </section>
             </div> <!--end of contactCon-->
 
@@ -84,8 +91,10 @@
             </main>
 
 		</div>
-       
+
+        <script src="https://www.google.com/recaptcha/api.js?render=6LdHBGAdAAAAAAVI6PdLltSwwBuTIc5phjKpE13_"></script>
 		<script src="js/main.js" type="module" defer></script>
+        <script src="js/contact.js" type="module"></script>
 	</body>
 
 </html>
