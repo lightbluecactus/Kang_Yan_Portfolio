@@ -11,6 +11,7 @@
  }
 
  #projectNavCon img {
+     width: 120px;
      margin-bottom: 10px;
      margin-left: -20px;
      transition: all .5s ease-out;
@@ -39,39 +40,44 @@
 // }
 
 #projectPanel {
-    margin-left: 20vw;
-    margin-right: 13vw;
+    margin-left: 22vw;
+    margin-right: 6vw;
     display: none;
 }
 
 #projPic1 {
-    margin-top: 20vh;
-    margin-bottom: 15vh;
+    max-width: 100%;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
 }
 
 #projTitle {
     font-family: $sub-font;
-    font-size: 60px;
-    padding-left: 30px;
+    font-size: 40px;
+    padding-left: 25px;
     border-left: 10px solid $sub-color;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
 }
 
 #projectPanel p {
-    line-height: 36px;
+    line-height: 28px;
+    font-size: 16px;
 }
 
 #projPart2 {
     margin: 10vh auto;
     display: flex;
-}
-
-#projPart2 p {
-    margin-left: 30px;
+    flex-direction: column;
+    align-items: center;
 }
 
 #projPic2 {
     max-width: 300px;
+}
+
+#projPart2 p {
+    margin-left: 0;
+    margin-top: 5vh;
 }
 
 #projPart3 img {
@@ -146,4 +152,52 @@
      max-width: 65%;
      z-index: 5;
      padding-top: 10vh;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    #projectNavCon img {
+        width: 150px;
+    }
+    #projectPanel {
+        margin-left: 20vw;
+        margin-right: 13vw;
+    }
+
+    #projPic1 {
+        margin-top: 20vh;
+        margin-bottom: 15vh;
+    }
+
+    #projTitle {
+        font-size: 60px;
+        padding-left: 30px;
+        margin-bottom: 10vh;
+    }
+
+    #projectPanel p {
+        line-height: 36px;
+        font-size: 18px;
+    }
+
+    
+}
+
+
+@media screen and (min-width: 960px) {
+    #projectNavCon img {
+        width: 220px;
+    }
+
+    #projPart2 {
+        flex-direction: row;
+    }
+
+    #projPart2 p {
+        margin-left: 30px;
+        margin-top: 0;
+    }
 }

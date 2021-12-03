@@ -68,8 +68,9 @@ main
 
 #logoNav {
 	position: fixed;
-	top: 60px;
-	left: 60px;
+	top: 20px;
+	left: 30px;
+	max-width: 60%;
 	transition: all .7s ease-out;
 	z-index: 10;
 	cursor: pointer;
@@ -88,10 +89,26 @@ main
 .svgIcon:hover {
 	filter: brightness(2);
 }
-
+ 
 footer {
 	text-align: center;
 	color: $main-color;
-	margin-top: 60px;
+	margin-top: 20px;
 	padding-bottom: 30px;
+}
+
+
+
+
+// media qieires
+@media screen and (min-width: 768px) {
+	#logoNav {
+		top: 60px;
+		left: 60px;
+		width: 55px;
+	}
+
+	footer {
+		margin-top: 60px;
+	}
 }
