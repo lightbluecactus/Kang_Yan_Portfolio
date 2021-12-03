@@ -11,7 +11,13 @@ download WAMP/MAMP/LAMP depend on your system, dowonload this project or `git cl
 This site will go on server soon.
 
 ## Further plans
-add more projects from next term.
+* add more projects from next term.
+
+* add placeholder when loading projects page
+
+* add page controller function
+
+* downloadable resume on about page
 
 ## License
 MIT License

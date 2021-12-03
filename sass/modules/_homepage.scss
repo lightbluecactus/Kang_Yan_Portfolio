@@ -86,7 +86,7 @@
     width: 100%;
 }
 
-footer {
+#homeAction {
     margin-top: 15vh;
     margin-left: 11vw;
     margin-right: 11vw;
@@ -96,7 +96,7 @@ footer {
     justify-content: space-around;
 }
 
-footer img {
+#homeAction img {
     clip-path: circle(50% at 50% 50%);
 }
 
@@ -104,13 +104,13 @@ footer img {
     margin-right: 3vw;
 }
 
-footer p {
+#homeAction p {
     width: 30vw;
     font-size: 24px;
     line-height: 36px;
 }
 
-footer ul {
+#homeAction ul {
     margin-left: auto;
     height: 160px;
     display: flex;
@@ -118,7 +118,7 @@ footer ul {
     justify-content: space-between;
 }
 
-footer ul img {
+#homeAction ul img {
     width: 40px;
     height: 40px;
 }

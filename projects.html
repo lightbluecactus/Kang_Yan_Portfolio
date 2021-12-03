@@ -32,41 +32,40 @@
                 </header>
 
 				<section id="projectNavCon">
-                    <h2 class="hidden">Projects Navagation</h2>
-                    <img src="images/proj-nav-1.jpg" class="projectNav" data-proj="beer" alt="project of beer mashup">
-                    <img src="images/proj-nav-2.jpg" class="projectNav" data-proj="illust" alt="project of illustration gallery">
-                    <img src="images/proj-nav-3.jpg" class="projectNav" data-proj="gallery" alt="additional artworks">
+					<h2 class="hidden">Projects Navagation</h2>
+					<thumb 
+						v-on:showdata="showProjData" 
+						v-for="item in projectsData" 
+						:piece="item"
+						:key="item.id">
+					</thumb>                    
                 </section>
                 
-                <section id="pageController">
+                <!-- <section id="pageController">
                     <h2 class="hidden">Controller to view next or previous project</h2>
                     <img src="images/btn-left.svg" alt="move to previous project" id="btnLeft">
                     <img src="images/btn-right.svg" alt="move to next project" id="btnRight">
-                </section>
+                </section> -->
 
                 <!-- project panel -->
-				<section id="projectPanel">
-					<img src="images/proj-placeholder.jpg" alt="project hero image" id="projPic1">
-					<h2 id="projTitle">Click on left to view projects</h2>
-					<p id="projYear"></p>
-					<p id="projCategory"></p>
-					<p id="projRole"></p>
-					<p id="projDesc1"></p>
-					<div id="projPart2">
-						<img src="" alt="project image 2" id="projPic2">
-						<p id="projDesc2"></p>
-					</div>
-					<div id="projPart3">
-						<img src="" alt="project image 3" id="projPic3">
-						<p id="projDesc3"></p>
-					</div>
+				<section >
+					<h2 class="hidden">Projects Panel</h2>
+					<projects id="projectPanel" 
+						:class='{ visible: isVisible }' 
+						:piece="currentProject">
+					</projects>
 				</section>
 
             </main>
 
+			<footer>
+				<h2 class="hidden">Main Footer</h2>
+				<p>&copy; 2021 Rainshadow</p>
+			</footer>
+
 		</div>
-        <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script> -->
-		<script src="js/main.js" type="module" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+		<script src="js/projects.js" type="module" defer></script>
 	</body>
 
 </html>
