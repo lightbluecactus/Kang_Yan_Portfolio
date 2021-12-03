@@ -11,6 +11,8 @@ download WAMP/MAMP/LAMP depend on your system, dowonload this project or `git cl
 This site will go on server soon.
 
 ## Further plans
+* gallery lightbox function debugging
+
 * explore color scheme
 
 * add more projects from next term.
@@ -20,6 +22,8 @@ This site will go on server soon.
 * add page controller function
 
 * downloadable resume on about page
+
+* adjust the API part
 
 ## License
 MIT License

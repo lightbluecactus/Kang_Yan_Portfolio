@@ -50,11 +50,54 @@
     margin-right: 10vw;
 }
 
+//--------video lightbox-----
+
 #btnPlay {
     margin: 20px 10vw 10vh auto;
     max-width: 75px;
     cursor: pointer;
 }
+
+.homeLightbox {
+    display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	align-items: center;
+	padding: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.homeLightbox a
+{
+	text-decoration: none;
+}
+
+.show-lightbox 
+{ 
+	display: flex; // the flexbox is to center the video
+	flex-direction: column;
+	justify-content: flex-end;
+	margin: 0 auto; 
+}
+
+.close
+{
+	font-size: 30px;
+	color: #fff;
+	position: absolute;
+	right: 5%;
+    top: 5%;
+    cursor: pointer;
+}
+
+.homeLightbox video {
+     max-width: 65%;
+     z-index: 5;
+     padding-top: 10vh;
+}
+//--------end of video lightbox-----
 
 #homeProjects {
     // background: url('../images/home-projects.jpg') center no-repeat;

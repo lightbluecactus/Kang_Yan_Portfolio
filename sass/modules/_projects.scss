@@ -100,5 +100,50 @@
 #galleryCon img {
     margin: 0;
     padding: 0;
+    cursor: pointer;
+    transition: all .3s ease-in;
 }
 
+#galleryCon img:hover {
+    filter: brightness(1.2);
+}
+
+.galleryLightbox {
+    display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	align-items: center;
+	padding: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.galleryLightbox a
+{
+	text-decoration: none;
+}
+
+.showLightbox 
+{ 
+	display: flex; // the flexbox is to center the video
+	flex-direction: column;
+	justify-content: flex-end;
+	margin: 0 auto; 
+}
+
+.closelb
+{
+	font-size: 30px;
+	color: #fff;
+	position: absolute;
+	right: 5%;
+    top: 5%;
+    cursor: pointer;
+}
+
+.galleryImg {
+     max-width: 65%;
+     z-index: 5;
+     padding-top: 10vh;
+}

@@ -34,7 +34,12 @@ import TheProjects from "./components/TheProjectsComp.js";
 
     const	logoNav = document.querySelector("#logoNav"),
 			mainNav = document.querySelector("#mainNav"),
-			main = document.querySelector("main");
+			main = document.querySelector("main"),
+
+			galleryThumb = document.querySelectorAll(".galleryThumb"),
+			lightbox = document.querySelector(".galleryLightbox"),
+			galleryImg = document.querySelector("#galleryImg"),
+			closelb = document.querySelector(".closelb");
 
 	let toggle = false;
 
@@ -55,8 +60,21 @@ import TheProjects from "./components/TheProjectsComp.js";
 		}
 	}
 
+	// lightbox
+	function popImgLightbox(event) {
+		lightbox.classList.add('showLightbox');
+
+		let key = event.target.dataset.gallery;
+		galleryImg.src = `images/gallery-img-${key}`;
+	}
+
+	function closeImgLightbox() {			
+		lightbox.classList.remove('showLightbox');
+	}
 
 	logoNav.addEventListener("click", toggleNav);
 	
+	galleryThumb.forEach(thumbnail => thumbnail.addEventListener("click", popImgLightbox));
+	closelb.addEventListener("click", closeImgLightbox);
 
 })();
