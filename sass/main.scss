@@ -80,17 +80,13 @@ main
 }
 
 .svgIcon {
+	filter: brightness(0.8);
 	cursor: pointer;
-	filter: brightness(3);
-	filter: saturate(2.5);
-	filter: grayscale(0.8);
 	transition: all .3s ease-in;
 }
 
 .svgIcon:hover {
-	filter: brightness(1);
-	filter: saturate(1);
-	filter: grayscale(0);
+	filter: brightness(2);
 }
 
 footer {

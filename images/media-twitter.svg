@@ -3,16 +3,16 @@
     <style>
       .cls-1 {
         fill: none;
-        stroke: #a81b8d;
+        stroke: #f0f0f0;
         stroke-width: 2px;
       }
 
       .cls-2 {
-        fill: #a81b8d;
+        fill: #f0f0f0;
       }
     </style>
   </defs>
-  <g id="media-twetter" transform="translate(6 1)">
+  <g id="media-twitter" transform="translate(6 1)">
     <g id="图层_3" data-name="图层 3">
       <rect id="矩形_16" data-name="矩形 16" class="cls-1" width="50" height="50" rx="25" transform="translate(-5)"/>
     </g>
