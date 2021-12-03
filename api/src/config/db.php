@@ -2,13 +2,13 @@
 
 class db
 {
-    private $host = 'localhost';
+    private $host = 'josten.iad1-mysql-e2-16a.dreamhost.com';
 
-    private $db_name = 'db_portfolio';
+    private $db_name = 'db_rsdportfolio';
 
-    private $username = 'root';
+    private $username = 'rsd_db_portfolio';
 
-    private $password = '';
+    private $password = 'dragon*FIREton05';
 
     public function connect(){
 

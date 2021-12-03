@@ -1,7 +1,7 @@
 <?php 
     $db_dsn = array( 
-        'host' => 'localhost', // this will change when you go live
-        'dbname' => 'db_portfolio', // update this with your database name
+        'host' => 'mysql.rainshadowportfolio.com', // this will change when you go live
+        'dbname' => 'db_rsdportfolio', // update this with your database name
         'charset' => 'utf8'
     );
 
@@ -9,8 +9,8 @@
 
     //This is the DB credentials
 
-    $db_user = 'root';
-    $db_pass = ''; // windows users leave this blank
+    $db_user = 'rsd_db_portfolio';
+    $db_pass = 'dragon*FIREton05'; 
 
     try {
         $pdo = new PDO($dsn, $db_user, $db_pass);
