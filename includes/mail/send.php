@@ -103,14 +103,14 @@ $end_result['comment'] = $visitor_comment;
 if ($not_empty_firstname && $not_empty_lastname && $not_empty_email) {
 
     $email_subject = 'Inquiry from Portfolio Site';
-    $email_recipient = 'rainshadow_site@sample.com'; 
+    $email_recipient = 'rainshadow_site@yahoo.com'; 
     // %s is a placeholder. format the message in the way defined:
     $email_message = sprintf('Name: %s, Email: %s, Topic: %s, Message: %s', $visitor_name, $visitor_email, $visitor_topic, $visitor_comment);
     // make sure to run the code in PHP 7.4+ to make an array, otherwise change it to a string -> https://www.php.net/manual/en/function.mail.php
     $email_headers = array(
     // best practice to have an email set up in noreply@yourdomain.com
-    'From'=>'noreply@rainshadowportfolio.com',
-    'Reply-To'=>$visitor_email,
+        'From'=>'noreply@rainshadowportfolio.com',
+        'Reply-To'=>$visitor_email,
     // if host provider don't give an email, use:
         // 'From'=>$visitor_email
     );

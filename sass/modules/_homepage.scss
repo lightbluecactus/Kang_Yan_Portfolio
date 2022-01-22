@@ -121,7 +121,11 @@
     border-radius: 5px;
     position: absolute;
     top: 75px;
-    transition: all .3s ease-in;
+    transition: all .7s ease-in;
+}
+
+#homeProjects h2:hover {
+    font-size: 23px;
 }
 
 // to restrict the width of image
@@ -148,10 +152,11 @@
     width: 90px;
 }
 
-#homeAction p {
+#homeAction h3 {
     width: 30vw;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 36px;
+    margin-left: 2vw;
 }
 
 #homeAction ul {
