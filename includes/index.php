@@ -1,5 +1,5 @@
 <?php
-    require("connect.php");
+    require("connect-localtest.php");
     require("functions.php");
 
     // filter the incoming request

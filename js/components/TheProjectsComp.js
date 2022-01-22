@@ -1,5 +1,6 @@
-import TheDetail from "./TheDetailComp.js";
+import TheDefault from "./TheDefaultComp.js";
 import TheGallery from "./TheGalleryComp.js";
+import TheVideo from "./TheVideoComp.js";
 
 export default {
     name: "TheProjectsComp",
@@ -19,12 +20,7 @@ export default {
     template: 
     `
     <div>
-        <img :src='"images/" + piece.heroPic' alt="piece.title" id="projPic1">
 		<h2 id="projTitle">{{ piece.title }}</h2>
-		<p id="projYear">{{ piece.year }}</p>
-		<p id="projCategory">{{ piece.category }}</p>
-		<p id="projRole">{{ piece.role }}</p>
-		<p id="projDesc1">{{ piece.descMain }}</p>
         <component 
             v-if="piece.mediaType" 
             :is="activeComponent" 
@@ -34,7 +30,8 @@ export default {
     `,
 
     components: {
-        detail: TheDetail,
-        gallery: TheGallery
+        default: TheDefault,
+        gallery: TheGallery,
+        videoComp: TheVideo
     }
 }

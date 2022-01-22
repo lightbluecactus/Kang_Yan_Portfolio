@@ -1,6 +1,11 @@
 #projectCon {
     min-height: 100vh;
 }
+
+#projectCon span {
+    background-color: $sub-color;
+    padding: 2px 3px;
+}
  
  #projectNavCon {
      display: flex;
@@ -42,13 +47,8 @@
 #projectPanel {
     margin-left: 22vw;
     margin-right: 6vw;
+    padding-top: 20vh;
     display: none;
-}
-
-#projPic1 {
-    max-width: 100%;
-    margin-top: 10vh;
-    margin-bottom: 5vh;
 }
 
 #projTitle {
@@ -59,9 +59,18 @@
     margin-bottom: 5vh;
 }
 
+#projPic1 {
+    max-width: 100%;
+    margin-bottom: 5vh;
+}
+
 #projectPanel p {
     line-height: 28px;
     font-size: 16px;
+}
+
+#projRole {
+    margin-bottom: 2vh;
 }
 
 #projPart2 {
@@ -91,13 +100,15 @@
     background-color: $bckgrd-color;
 }
 
-#projVideo {
+.projVideo {
     width: 67vw;
 }
 
 #projPart3 p {
     margin-top: 10vh;
 }
+
+// ------- start of TheGalleryComp --------
 
 #galleryCon {
     margin-top: 10vh;
@@ -157,19 +168,18 @@
 
 
 
+//  ------ start of media quires -----------
+
+
 
 @media screen and (min-width: 768px) {
     #projectNavCon img {
-        width: 150px;
+        width: 120px;
     }
+
     #projectPanel {
         margin-left: 20vw;
         margin-right: 13vw;
-    }
-
-    #projPic1 {
-        margin-top: 20vh;
-        margin-bottom: 15vh;
     }
 
     #projTitle {
@@ -178,9 +188,17 @@
         margin-bottom: 10vh;
     }
 
+    #projPic1 {
+        margin-bottom: 10vh;
+    }
+
     #projectPanel p {
         line-height: 36px;
         font-size: 18px;
+    }
+
+    #projRole {
+        margin-bottom: 5vh;
     }
 
     
