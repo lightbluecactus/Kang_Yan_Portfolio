@@ -37,10 +37,10 @@
     border-top: none;
 	border-left: none;
 	border-right: none;
-    border-bottom: 2px solid $sub-color;
+    border-bottom: 2px solid $purple;
     background-color: rgba(0,0,0,0);
     height: 30px;
-    color: $sub-color;
+    color: $purple;
     font-size: 16px;
     margin-bottom: 40px;
  }
@@ -69,32 +69,36 @@
 
  #btnSend {
     display: block;
-    margin-top: 25px;
     font-size: 22px;
-    padding: 15px 20px;
-    color: $main-color !important;
+    padding: 15px 25px 30px 25px;
+    color: $white !important;
     border-style: none !important;
-    border: 2px solid $main-color !important;
-    border-radius: 5px;
+    border: 1px solid $white !important;
+    border-radius: 15px;
     cursor: pointer;
   }
 
+ #btnSend:hover {
+	background-color: rgba($color: $white, $alpha: 0.4);
+    color: $mint !important;
+ }
+
  #contactMediaCon {
       width: 30%;
+      min-height: 30vh;
       position: absolute;
       top: 35vh;
       right: 0;
 }
 
- #contaceMedia {
+ #contactMedia {
       background-color: rgba(168, 27, 141, 0.65);
       width: 30vw;
       margin-bottom: 20vh;
       padding-right: 200px;
-      overflow: hidden;
   }
 
-#contaceMedia h3 {
+#contactMedia h3 {
     font-size: 16px;
     width: 25vw;
     padding-top: 20px;
@@ -110,7 +114,7 @@
 
 #socialMediaContact img {
     width: 25px;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 #contactDeco {
@@ -154,13 +158,13 @@
         width: 45%;
     }
 
-    #contaceMedia h3 {
+    #contactMedia h3 {
         font-size: 18px;
         width: 40vw;
     }
 
     #socialMediaContact img {
-        width: 40px;
+        width: 30px;
     }
 
     #contactDeco {

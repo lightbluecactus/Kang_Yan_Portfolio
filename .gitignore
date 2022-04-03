@@ -5,3 +5,4 @@ vendor
 TheGalleryComp-test.js
 TheGalleryImgFunction.js
 connect-localtest.php
+*.code-workspace

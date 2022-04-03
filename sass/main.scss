@@ -2,7 +2,6 @@
 // order is important
 @import "modules/reset";
 @import "modules/vars";
-@import "modules/queries";
 
 @import "modules/defaults";
 @import "modules/homepage";
@@ -22,7 +21,7 @@
 }
 
 #container{
-	background-color: $bckgrd-color;
+	background-color: $dark;
 	width: 100%;
 }
 
@@ -32,7 +31,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: $bckgrd-color;
+	background-color: $dark;
 	transition: all .7s ease-out;
 	display: none;
 	opacity: 0%;
@@ -41,7 +40,7 @@
 
 #mainNav a
 {
-	color: $main-color;
+	color: $white;
 	font-size: 26px;
 	font-family: $sub-font;
 	display: block;
@@ -68,9 +67,9 @@ main
 
 #logoNav {
 	position: fixed;
-	top: 20px;
-	left: 30px;
-	max-width: 60%;
+	top: 40px;
+	left: 15px;
+	max-width: 80px;
 	transition: all .7s ease-out;
 	z-index: 10;
 	cursor: pointer;
@@ -79,6 +78,7 @@ main
 #logoNav:hover {
 	filter:brightness(1.2);
 }
+
 
 .svgIcon {
 	filter: brightness(0.8);
@@ -89,10 +89,31 @@ main
 .svgIcon:hover {
 	filter: brightness(2);
 }
+
+.btnHover {
+	background: none;
+    border: 1px solid $white;
+    border-radius: 15px;
+	transition: all .7s ease-in;
+}
+
+.btnTextHover {
+	color: $white;
+	transition: all .7s ease-in;
+}
+
+.btnHover:hover {
+	background-color: rgba($color: $white, $alpha: 0.4);
+	color: $mint;
+}
+
+.btnTextHover:hover {
+	color: $mint;
+}
  
 footer {
 	text-align: center;
-	color: $main-color;
+	color: $white;
 	margin-top: 20px;
 	padding-bottom: 30px;
 }
@@ -103,9 +124,9 @@ footer {
 // media qieires
 @media screen and (min-width: 768px) {
 	#logoNav {
-		top: 60px;
-		left: 60px;
-		width: 55px;
+		top: 40px;
+		left: 45px;
+		max-width: 125px;
 	}
 
 	footer {

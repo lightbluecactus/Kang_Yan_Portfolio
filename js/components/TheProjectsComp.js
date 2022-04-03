@@ -1,6 +1,7 @@
-import TheDefault from "./TheDefaultComp.js";
+import TheWebsite from "./TheWebsiteComp.js";
 import TheGallery from "./TheGalleryComp.js";
-import TheVideo from "./TheVideoComp.js";
+import TheMotion from "./TheMotionComp.js";
+import TheFeatured from "./TheFeaturedComp.js";
 
 export default {
     name: "TheProjectsComp",
@@ -30,8 +31,9 @@ export default {
     `,
 
     components: {
-        default: TheDefault,
+        website: TheWebsite,
         gallery: TheGallery,
-        videoComp: TheVideo
+        motion: TheMotion,
+        featured: TheFeatured
     }
 }

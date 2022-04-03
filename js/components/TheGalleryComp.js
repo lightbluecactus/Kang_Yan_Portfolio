@@ -8,7 +8,7 @@ export default {
     <div>
         <img :src='"images/" + compData.heroPic' alt="compData.title" id="projPic1">
 	    <p id="projDesc1">{{ compData.descMain }}</p>
-        <div id="galleryCon">
+        <div class="galleryCon">
             <img src="images/gallery-thumb-1.jpg" alt="gallery thumbnail" class="galleryThumb" data-gallery="1">
             <img src="images/gallery-thumb-2.jpg" alt="gallery thumbnail" class="galleryThumb" data-gallery="2">
             <img src="images/gallery-thumb-3.jpg" alt="gallery thumbnail" class="galleryThumb" data-gallery="3">

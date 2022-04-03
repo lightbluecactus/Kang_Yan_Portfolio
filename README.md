@@ -7,28 +7,16 @@ Need a browser and a local server to open index.html.
 ## Usage
 download WAMP/MAMP/LAMP depend on your system, dowonload this project or `git clone` to your server directory, run localhost, open browser and go to localhost/favourite_things. Then you should see the web page.
 
-## Note
-This site will go on server soon.
 
 ## Further plans
 * gallery lightbox function debugging
 
-* explore color scheme
-
-* add more projects from next term.
-
-* add placeholder when loading projects page
-
 * add page controller function
-
-* downloadable resume on about page
-
-* adjust the API part
 
 ## License
 MIT License
 
-Copyright (c) 2021 Rainshadow (Yan Kang)
+Copyright (c) 2022 Rainshadow (Yan Kang)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
