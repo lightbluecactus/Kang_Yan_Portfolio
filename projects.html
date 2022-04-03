@@ -6,10 +6,10 @@
 		<title>Rainshadow Portfolio</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet" type="text/css">
 		
-	</head>
+	</head> 
 	<body>
 		<!-- Content Goes Here -->
 		<h1 class="hidden">Rainshadow Portfolio</h1>
@@ -31,36 +31,72 @@
                     <img src="images/logo-nav.svg" alt="logo icon - click to open navagation" id="logoNav">
                 </header>
 
+				<!-- project Nav -->
 				<section id="projectNavCon">
 					<h2 class="hidden">Projects Navagation</h2>
 					<thumb 
-						v-on:showdata="showProjData" 
+						v-on:showdata="showProjData"
 						v-for="item in projectsData" 
 						:piece="item"
 						:key="item.id">
 					</thumb>                    
                 </section>
+				<!-- end of project Nav -->
                 
-                <!-- <section id="pageController">
-                    <h2 class="hidden">Controller to view next or previous project</h2>
-                    <img src="images/btn-left.svg" alt="move to previous project" id="btnLeft">
-                    <img src="images/btn-right.svg" alt="move to next project" id="btnRight">
-                </section> -->
+               <!-- Main project -->
+			   <section id="mainProjCon" :class='{ visible: !isVisible }'>
+				    <h2 id="projTitle">APOPO Charity 5K Run (Part A)</h2>
+				    <video src="video/apopo.mp4" controls id="projVideo" class="projVideo"></video>
+					<p id="projYear"><span>Year</span>2022</p>
+					<p id="projCategory"><span>Category</span>Group project of 3</p>
+					<p id="projRole"><span>Role</span>Motion designer, back-end developer</p>
+					<p id="projDesc1">
+						On the current page I will talk about how the campaign idea developed as a group work. APOPO is a NGO that trains rats and dogs to detect landmines and tuberculosis. We chose APOPO to carry out a summer campaign because we believe the potential audience will be easily attracted by APOPO's work that cute animals helping human to make this world better. During the designing process of the campaign, the war in Ukraine has happened, so we decided to not only include the landmine area in general, but also target on people in Ukraine who need help.
+					</p>
+				<div class="galleryCon" id="galleryFeatured">
+					<img src="images/apopo-poster-1.jpg" alt="initial character draft" title="initial character draft" class="galleryThumb">
+					<img src="images/apopo-poster-2.jpg" alt="first charecter model" title="first charecter model" class="galleryThumb">
+					<img src="images/apopo-poster-3.jpg" alt="final character model" title="final rendered character model" class="galleryThumb">
+				</div>
+				<p id="posterDesc">Design process of character model.</p>
+				<p><span>Challenge</span></p>
+				<p id="projChallenge">
+					With some research, we found that in the past campaigns, APOPO has put more efforts on offline activities, and during the pandemic time, it is not a good idea to gather guests for a training center trip. Also, in the past campaign such as 2020 Year of Rat, APOPO has created a rat character as visual interest, but it is less attracting.
+				</p>
+				<p><span>Solution</span></p>
+				<p id="projSolution">
+					Firstly, we decided to build a 3D model of HeroRat that stands for APOPO. We want to carry out a campaign that most people, if not everyone, can participate, regardless of their equipment or location. Therefore, we planned a location based camera function for users to let the HeroRat detecting fictional landmine by taking photos. On the second stage, we think the purpose of the camera function is less clear, so we have adjusted the activity to a 5 km running event that collect funds for APOPO and Ukraine warzones. The user can use our campaign app to track their running time and distance. If the user does not like running, they can also donate directly on the app.
+				</p>
+				<div class="galleryCon">
+					<img src="images/apopo-thumb-1.jpg" alt="image from apopo promo video" class="galleryThumb">
+					<img src="images/apopo-thumb-2.jpg" alt="image from apopo promo video" class="galleryThumb">
+					<img src="images/apopo-thumb-3.jpg" alt="image from apopo promo video" class="galleryThumb">
+					<img src="images/apopo-thumb-4.jpg" alt="image from apopo promo video" class="galleryThumb">
+					<img src="images/apopo-thumb-5.jpg" alt="image from apopo promo video" class="galleryThumb">
+					<img src="images/apopo-thumb-6.jpg" alt="image from apopo promo video" class="galleryThumb">
+				</div>
+			</section> <!-- end of Main project -->
 
                 <!-- project panel -->
 				<section >
 					<h2 class="hidden">Projects Panel</h2>
-					<projects id="projectPanel" 
+					<projects class="projectPanel" 
 						:class='{ visible: isVisible }' 
 						:piece="currentProject">
 					</projects>
 				</section>
 
+ 				<!-- <section id="pageController">
+                    <h2 class="hidden">Controller to view next or previous project</h2>
+                    <img src="images/btn-left.svg" alt="move to previous project" id="btnLeft">
+                    <img src="images/btn-right.svg" alt="move to next project" id="btnRight">
+                </section> -->
+
             </main>
 
 			<footer>
 				<h2 class="hidden">Main Footer</h2>
-				<p>&copy; 2021 Rainshadow</p>
+				<p>&copy; 2022 Rainshadow</p>
 			</footer>
 
 		</div>

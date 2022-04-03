@@ -13,7 +13,7 @@
      font-family: $sub-font;
      font-size: 40px;
      padding-left: 25px;
-     border-left: 10px solid $sub-color;
+     border-left: 10px solid $purple;
      margin-bottom: 5vh;
  }
 
@@ -38,7 +38,7 @@
     font-family: $sub-font;
     font-size: 30px;
     padding-left: 20px;
-    border-left: 10px solid $sub-color;
+    border-left: 10px solid $purple;
     margin-bottom: 3vh;
  }
 
@@ -56,7 +56,7 @@
     margin-right: 11vw;
     margin-top: 15vh;
     padding-bottom: 15vh;
-    background-color: $bckgrd-color;
+    background-color: $dark;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -75,14 +75,20 @@
  }
 
  #action a {
-     color: $main-color;
+     color: $white;
  }
+
+ #action a:hover {
+    color: $mint;
+}
 
 .btnAction {
     padding: 9px 12px;
     margin: 3vh 20px;
-    border: 2px solid $main-color;
-    border-radius: 5px;
+    font-size: 18px;
+    background: none;
+    border: 1px solid $white;
+    border-radius: 15px;
     cursor: pointer;
 }
 

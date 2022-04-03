@@ -1,12 +1,12 @@
 #socialMediaHeader {
-    height: 100px;
+    height: 90px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     position: absolute;
-    top: 20px;
-    left: 100px;
+    top: 40px;
+    left: 115px;
 }
 
 #socialMediaHeader img {
@@ -27,7 +27,7 @@
     margin-left: auto;
     margin-right: 10vw;
     max-width: 60%;
-    border-left: 10px solid $sub-color;
+    border-left: 10px solid $purple;
     padding-left: 30px;
     // position: relative;
 }
@@ -37,7 +37,7 @@
 //     display: block;
 //     height: 30px;
 //     width: 30px;
-//     background-color: $sub-color;
+//     background-color: $purple;
 //     position: absolute;
 //     right: 20px;
 // }
@@ -110,22 +110,21 @@
     position: relative;
 }
 
-#homeProjects a {
-    color: $main-color;
-}
-
-#homeProjects h2 {
-    font-size: 24px;
+#homeProjects button {
     padding: 9px 12px;
-    border: 2px solid $main-color;
-    border-radius: 5px;
     position: absolute;
     top: 75px;
-    transition: all .7s ease-in;
 }
 
-#homeProjects h2:hover {
-    font-size: 23px;
+#homeProjects button a {
+    color: $white;
+    font-size: 24px;
+    font-family: $main-font;
+}
+
+#homeProjects button a:hover {
+    font-size: 20px;
+    color: $mint;
 }
 
 // to restrict the width of image
@@ -135,7 +134,7 @@
 
 #homeAction {
     margin-top: 15vh;
-    margin-left: 11vw;
+    margin-left: 5vw;
     margin-right: 11vw;
     padding-bottom: 20vh;
     display: flex;
@@ -153,10 +152,11 @@
 }
 
 #homeAction h3 {
-    width: 30vw;
-    font-size: 20px;
+    width: 50vw;
+    font-size: 14px;
     line-height: 36px;
     margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 #homeAction ul {
@@ -165,6 +165,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+#homeAction ul li {
+    margin-bottom: 25px;
 }
 
 #homeAction ul img {
@@ -178,12 +182,13 @@
 // media queries
 @media screen and (min-width: 768px) {
     #socialMediaHeader {
-        top: 60px;
-        left: 135px;
+        height: 100px;
+        top: 40px;
+        left: 200px;
     }
 
     #heroLogo {
-        max-width: 100%;
+        max-width: 447px;
     }
 
     #hero h2 {
@@ -198,19 +203,31 @@
         max-width: 65%;
     }
 
-    #homeProjects h2 {
-        font-size: 32px;
+    #homeProjects button {
         padding: 15px 20px;
         top: 150px;
+    }
+
+    #homeProjects button a {
+        font-size: 32px;
+    }
+
+    #homeProjects button a:hover {
+         font-size: 28px;
     }
 
     #profileHome {
         width: 160px;
     }
 
-    #homeAction p {
-        font-size: 24px;
+    #homeAction {
+        margin-left: 11vw;
     }
+
+    #homeAction h3 {
+        font-size: 22px;
+        line-height: 32px;
+    } 
 
     #homeAction ul {
         height: 80px;

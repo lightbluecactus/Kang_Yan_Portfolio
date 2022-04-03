@@ -5,7 +5,7 @@ import TheProjects from "./components/TheProjectsComp.js";
 (()=>{
 
 	const myVue = new Vue({
-		el: "#projectCon",
+		el: "#projectCon", 
 
 		created: function() {
 			getData(null, (data) => this.projectsData = data);
@@ -23,6 +23,7 @@ import TheProjects from "./components/TheProjectsComp.js";
 				this.isVisible = true;
 				console.log(item);
 			}
+
 		},
 
 		components: {
@@ -35,7 +36,6 @@ import TheProjects from "./components/TheProjectsComp.js";
     const	logoNav = document.querySelector("#logoNav"),
 			mainNav = document.querySelector("#mainNav"),
 			main = document.querySelector("main");
-
 	// const	galleryThumb = document.querySelectorAll(".galleryThumb"),
 	// 		lightbox = document.querySelector(".galleryLightbox"),
 	// 		galleryImg = document.querySelector("#galleryImg"),
