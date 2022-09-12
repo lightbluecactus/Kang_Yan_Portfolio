@@ -1,4 +1,5 @@
 <?php
+    //require("connect.php");
     require("connect-localtest.php");
     require("functions.php");
 
