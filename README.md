@@ -5,7 +5,7 @@ This is a portfolio site of mine, it includes some of my projects as web develop
 Need a browser and a local server to open index.html.
 
 ## Usage
-download WAMP/MAMP/LAMP depend on your system, dowonload this project or `git clone` to your server directory, run localhost, open browser and go to localhost/favourite_things. Then you should see the web page.
+download WAMP/MAMP/LAMP depend on your system, dowonload this project or `git clone` to your server directory, run localhost, open browser and go to localhost/Kang_Yan_Portfolio, Then you should see the web page.
 
 
 ## Further plans
