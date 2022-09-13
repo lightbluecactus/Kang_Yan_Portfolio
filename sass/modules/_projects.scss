@@ -100,12 +100,17 @@
     background-color: $dark;
 }
 
+#projPart3 p {
+    margin-top: 10vh;
+}
+
 .projVideo {
     width: 67vw;
 }
 
-#projPart3 p {
-    margin-top: 10vh;
+#posterDesc {
+    margin-bottom: 5vh;
+    font-size: 13px;
 }
 
 // ------- start of TheGalleryComp --------
@@ -114,42 +119,42 @@
     margin-top: 10vh;
 }
 
-.galleryCon img {
+.galleryThumb, .defaultThumb {
     margin: 0;
     padding: 0;
     cursor: pointer;
     transition: all .3s ease-in;
 }
 
-.galleryCon img:hover {
+.galleryThumb, .defaultThumb:hover {
     filter: brightness(1.2);
 }
 
-.galleryLightbox {
+.galleryLightbox, .defaultGalleryLb {
     display: none;
 	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100vw;
+	left: 10vw;
+    //set top in JS so that lightbox appear by scroll position, but still scrollable
+	width: 80vw;
 	align-items: center;
 	padding: 0;
 	background-color: rgba(0, 0, 0, 0.7);
 }
 
-.galleryLightbox a
+.showLightbox 
+{ 
+	display: flex;  // the flexbox is to center the video
+	flex-direction: column;
+	justify-content: flex-end;
+	//margin: 0 auto; 
+}
+
+.galleryLightbox, .defaultGalleryLb a
 {
 	text-decoration: none;
 }
 
-.showLightbox 
-{ 
-	display: flex; // the flexbox is to center the video
-	flex-direction: column;
-	justify-content: flex-end;
-	margin: 0 auto; 
-}
-
-.closelb
+.closelb, .closeDefaultLb
 {
 	font-size: 30px;
 	color: #fff;
@@ -159,10 +164,11 @@
     cursor: pointer;
 }
 
-.galleryImg {
-     max-width: 65%;
-     z-index: 5;
-     padding-top: 10vh;
+.galleryImg, .defaultGalleryImg {
+    z-index: 5;
+    width: 60vw;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 
@@ -208,7 +214,7 @@
     
 }
 
-
+ 
 @media screen and (min-width: 960px) {
     #projectNavCon img {
         width: 150px;

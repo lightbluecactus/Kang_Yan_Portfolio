@@ -12,13 +12,38 @@ export default {
 		<p id="projRole"><span>Role</span> {{ compData.role }}</p>
 	    <p id="projDesc1">{{ compData.descMain }}</p>
         <div class="galleryCon">
-            <img :src='"images/" + compData.abbr + "-thumb-1.jpg"' alt="gallery thumbnail" class="galleryThumb">
-            <img :src='"images/" + compData.abbr + "-thumb-2.jpg"' alt="gallery thumbnail" class="galleryThumb">
-            <img :src='"images/" + compData.abbr + "-thumb-3.jpg"' alt="gallery thumbnail" class="galleryThumb">
-            <img :src='"images/" + compData.abbr + "-thumb-4.jpg"' alt="gallery thumbnail" class="galleryThumb">
-            <img :src='"images/" + compData.abbr + "-thumb-5.jpg"' alt="gallery thumbnail" class="galleryThumb">
-            <img :src='"images/" + compData.abbr + "-thumb-6.jpg"' alt="gallery thumbnail" class="galleryThumb">
+            <img :src='"images/" + compData.abbr + "-thumb-1.jpg"' data-gallery="1" @click="setLightbox" class="galleryThumb" alt="gallery thumbnail">
+            <img :src='"images/" + compData.abbr + "-thumb-2.jpg"' data-gallery="2" @click="setLightbox" class="galleryThumb" alt="gallery thumbnail">
+            <img :src='"images/" + compData.abbr + "-thumb-3.jpg"' data-gallery="3" @click="setLightbox" class="galleryThumb" alt="gallery thumbnail">
+            <img :src='"images/" + compData.abbr + "-thumb-4.jpg"' data-gallery="4" @click="setLightbox" class="galleryThumb" alt="gallery thumbnail">
+            <img :src='"images/" + compData.abbr + "-thumb-5.jpg"' data-gallery="5" @click="setLightbox" class="galleryThumb" alt="gallery thumbnail">
+            <img :src='"images/" + compData.abbr + "-thumb-6.jpg"' data-gallery="6" @click="setLightbox" class="galleryThumb" alt="gallery thumbnail">
         </div>
+        <section class="galleryLightbox">
+			<h2 class="hidden">Artworks Viewer</h2>
+			<a href="#" class="closelb" @click="closeLightbox">X</a>
+			<img src="" alt="artworks" class="galleryImg">
+		</section>
     </div>
-    `
+    `,
+
+    methods: {
+        setLightbox(event) {
+            let picNum = event.target.dataset.gallery;
+            let galleryImg = document.querySelector(".galleryImg");
+            
+            galleryImg.src = `images/${this.compData.abbr}-thumb-${picNum}.jpg`;
+            console.log("clicked on a pic " + galleryImg.src);
+
+            let galleryLightbox = document.querySelector(".galleryLightbox");
+            galleryLightbox.classList.add("showLightbox");
+            galleryLightbox.style.top = `${document.documentElement.scrollTop + 100}px`;
+           
+        },
+
+        closeLightbox() {
+            let galleryLightbox = document.querySelector(".galleryLightbox");
+            galleryLightbox.classList.remove("showLightbox");
+        }
+    }
 }

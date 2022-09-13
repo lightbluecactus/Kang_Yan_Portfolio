@@ -22,6 +22,25 @@ import TheProjects from "./components/TheProjectsComp.js";
 				this.currentProject = item;
 				this.isVisible = true;
 				console.log(item);
+			},
+
+
+			// control lightbox on page loading (projects.html)
+			setDefaultLightbox(event) {
+				let picNum = event.target.dataset.defaultgallery;
+            	console.log("clicked on a pic" + picNum);
+
+				let defaultGalleryImg = document.querySelector(".defaultGalleryImg");
+            	defaultGalleryImg.src = `images/apopo-thumb-${picNum}.jpg`;
+
+            	let defaultGalleryLb = document.querySelector(".defaultGalleryLb");
+            	defaultGalleryLb.classList.add("showLightbox");
+            	defaultGalleryLb.style.top = `${document.documentElement.scrollTop + 100}px`;
+			},
+
+			closeDefaultLightbox() {
+				let defaultGalleryLb = document.querySelector(".defaultGalleryLb");
+				defaultGalleryLb.classList.remove("showLightbox");
 			}
 		},
 
@@ -32,14 +51,12 @@ import TheProjects from "./components/TheProjectsComp.js";
 
 	})
 
+
+	// plain JS - controls nav 
+
     const	logoNav = document.querySelector("#logoNav"),
 			mainNav = document.querySelector("#mainNav"),
 			main = document.querySelector("main");
-
-	// const	galleryThumb = document.querySelectorAll(".galleryThumb"),
-	// 		lightbox = document.querySelector(".galleryLightbox"),
-	// 		galleryImg = document.querySelector("#galleryImg"),
-	// 		closelb = document.querySelector(".closelb");
 
 	let toggle = false;
 
@@ -60,21 +77,6 @@ import TheProjects from "./components/TheProjectsComp.js";
 		}
 	} 
 
-	// lightbox
-	// function popImgLightbox(event) {
-	// 	lightbox.classList.add('showLightbox');
-
-	// 	let key = event.target.dataset.gallery;
-	// 	galleryImg.src = `images/gallery-img-${key}`;
-	// }
-
-	// function closeImgLightbox() {			
-	// 	lightbox.classList.remove('showLightbox');
-	// }
-
 	logoNav.addEventListener("click", toggleNav);
 	
-	// galleryThumb.forEach(thumbnail => thumbnail.addEventListener("click", popImgLightbox));
-	// closelb.addEventListener("click", closeImgLightbox);
-
 })();
