@@ -11,6 +11,7 @@ export default {
 
     methods: {
         showmydata() {
+            window.scroll(0, 0);
             this.$emit("showdata", this.piece);
         }
     }
