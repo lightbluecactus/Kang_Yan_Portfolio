@@ -82,12 +82,14 @@ main
 
 .svgIcon {
 	filter: brightness(0.8);
-	cursor: pointer;
+	border-radius: 50px;
 	transition: all .3s ease-in;
+	cursor: pointer;
 }
 
 .svgIcon:hover {
 	filter: brightness(2);
+	box-shadow: 0 0 20px $mint;
 }
 
 .btnHover {
@@ -97,20 +99,22 @@ main
 	transition: all .7s ease-in;
 }
 
-.btnTextHover {
+.btnHover a {
 	color: $white;
 	transition: all .7s ease-in;
 }
 
-.btnHover:hover {
-	background-color: rgba($color: $white, $alpha: 0.4);
-	color: $mint;
+.btnHover:hover a {
+	color: $mint-glow;
 }
 
-.btnTextHover:hover {
-	color: $mint;
+.btnHover:hover {
+	//background-color: rgba($color: $white, $alpha: 0.3);
+	color: $mint-glow;
+	text-shadow: 0 0 30px $mint;
 }
  
+
 footer {
 	text-align: center;
 	color: $white;
@@ -125,11 +129,19 @@ footer {
 @media screen and (min-width: 768px) {
 	#logoNav {
 		top: 40px;
-		left: 45px;
-		max-width: 125px;
+		left: 20px;
+		max-width: 100px;
 	}
 
 	footer {
 		margin-top: 60px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	#logoNav {
+		top: 40px;
+		left: 45px;
+		max-width: 125px;
 	}
 }

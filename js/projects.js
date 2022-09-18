@@ -31,11 +31,11 @@ import TheProjects from "./components/TheProjectsComp.js";
             	console.log("clicked on a pic" + picNum);
 
 				let defaultGalleryImg = document.querySelector(".defaultGalleryImg");
-            	defaultGalleryImg.src = `images/apopo-thumb-${picNum}.jpg`;
+            	defaultGalleryImg.src = `images/apopo-view-${picNum}.jpg`;
 
             	let defaultGalleryLb = document.querySelector(".defaultGalleryLb");
             	defaultGalleryLb.classList.add("showLightbox");
-            	defaultGalleryLb.style.top = `${document.documentElement.scrollTop + 100}px`;
+            	defaultGalleryLb.style.top = `${document.documentElement.scrollTop + 25}px`;
 			},
 
 			closeDefaultLightbox() {

@@ -6,9 +6,9 @@
     // then we should retrieve the row of data that matches and pass it back to the app
     function getProjData($conn, $project) {
         if (is_null($project)) {
-            $query = "SELECT * FROM tbl_projects ORDER BY `id` ASC";
+            $query = "SELECT * FROM tbl_projects ORDER BY `ord` ASC";
         } else {
-            $query = "SELECT * FROM tbl_projects WHERE id='".$project."' ORDER BY `id` ASC";
+            $query = "SELECT * FROM tbl_projects WHERE id='".$project."' ORDER BY `ord` ASC";
         }
 
         // this is the database result -> the raw data that SQL gives us

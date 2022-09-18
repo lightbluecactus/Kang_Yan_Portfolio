@@ -54,7 +54,13 @@
 #btnPlay {
     margin: 20px 10vw 10vh auto;
     max-width: 50px;
+    border-radius: 50px;
+    transition: all .7s ease-in;
     cursor: pointer;
+}
+
+#btnPlay:hover {
+    box-shadow: 0 0 30px $mint;
 }
 
 .homeLightbox {
@@ -122,9 +128,9 @@
     font-family: $main-font;
 }
 
-#homeProjects button a:hover {
-    font-size: 20px;
-    color: $mint;
+#homeProjects button a:hover  {
+    font-size: 22px;
+    color: $mint-glow;
 }
 
 // to restrict the width of image

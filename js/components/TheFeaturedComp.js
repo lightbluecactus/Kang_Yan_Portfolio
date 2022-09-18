@@ -11,7 +11,7 @@ export default {
 		<p id="projCategory"><span>Category</span> {{ compData.category }}</p>
 		<p id="projRole"><span>Role</span> {{ compData.role }}</p>
 	    <p id="projDesc1">{{ compData.descMain }}</p>
-        <div class="galleryCon" id="galleryFeatured">
+        <div class="galleryPosterCon" id="galleryFeatured">
             <img :src='"images/" + compData.abbr + "-poster-1.jpg"' data-gallery="1" @click="setLightbox" class="galleryThumb">
             <img :src='"images/" + compData.abbr + "-poster-2.jpg"' data-gallery="2" @click="setLightbox" class="galleryThumb">
             <img :src='"images/" + compData.abbr + "-poster-3.jpg"' data-gallery="3" @click="setLightbox" class="galleryThumb">
@@ -37,7 +37,7 @@ export default {
         </div>
         <section class="galleryLightbox">
 			<h2 class="hidden">Artworks Viewer</h2>
-			<a href="#" class="closelb" @click="closeLightbox">X</a>
+			<a href="#" class="closelb" @click="closeLightbox">&#10006;</a>
 			<img src="" alt="artworks" class="galleryImg">
 		</section>
     </div>
@@ -48,12 +48,12 @@ export default {
             let picNum = event.target.dataset.gallery;
             let galleryImg = document.querySelector(".galleryImg");
 
-            galleryImg.src = `images/${this.compData.abbr}-thumb-${picNum}.jpg`;
+            galleryImg.src = `images/${this.compData.abbr}-view-${picNum}.jpg`;
             console.log("clicked on a pic " + galleryImg.src);
 
             let galleryLightbox = document.querySelector(".galleryLightbox");
             galleryLightbox.classList.add("showLightbox");
-            galleryLightbox.style.top = `${document.documentElement.scrollTop + 100}px`;
+            galleryLightbox.style.top = `${document.documentElement.scrollTop + 25}px`;
            
         },
 
