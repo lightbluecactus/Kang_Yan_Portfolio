@@ -1,4 +1,4 @@
-#aboutMe, #education, #languge, #software {
+#aboutMe, #education, #languge, #software, #interestingFact {
     margin-left: 22vw;
     margin-right: 6vw;
     margin-bottom: 10vh;
@@ -34,7 +34,7 @@
      filter: brightness(0.9);
  }
 
- #education h2, #languge h2, #software h2 {
+ #education h2, #languge h2, #software h2, #interestingFact h2 {
     font-family: $sub-font;
     font-size: 30px;
     padding-left: 20px;
@@ -42,14 +42,15 @@
     margin-bottom: 3vh;
  }
 
- #education p, #languge p, #software p {
+ #education p, #languge p, #software p, #interestingFact p {
     font-size: 16px;
     line-height: 28px;
  }
-
- #education:nth-child(2) {
-     font-size: 22px;
- }
+ 
+ #education span {
+    color: $purple;
+    font-size: 14px;
+}
 
  #action {
     margin-left: 15vw;
@@ -76,7 +77,7 @@
 
  #action a {
      color: $white;
- }
+ } 
 
  #action a:hover {
     color: $mint;
@@ -97,7 +98,7 @@
 
 // media qieires
 @media screen and (min-width: 768px) {
-    #aboutMe, #education, #languge, #software {
+    #aboutMe, #education, #languge, #software, #interestingFact {
         margin-left: 15vw;
         margin-right: 11vw;
     }
@@ -118,19 +119,19 @@
         line-height: 36px;
     }
 
-    #education h2, #languge h2, #software h2 {
+    #education h2, #languge h2, #software h2, #interestingFact h2 {
         font-size: 36px;
         padding-left: 30px;
         margin-bottom: 5vh;
      }
     
      #education p, #languge p, #software p {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 36px;
      }
 
-     #education:nth-child(2) {
-        font-size: 32px;
+     #education span {
+        font-size: 16px;
     }
 
     #action h2{

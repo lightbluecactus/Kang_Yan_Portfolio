@@ -2,7 +2,5 @@ node_modules
 package-lock.json
 composer-lock.json
 vendor
-TheGalleryComp-test.js
-TheGalleryImgFunction.js
-connect-localtest.php
+connect.php
 *.code-workspace

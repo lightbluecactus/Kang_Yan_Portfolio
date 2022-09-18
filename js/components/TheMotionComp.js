@@ -21,7 +21,7 @@ export default {
         </div>
         <section class="galleryLightbox">
 			<h2 class="hidden">Artworks Viewer</h2>
-			<a href="#" class="closelb" @click="closeLightbox">X</a>
+			<a href="#" class="closelb" @click="closeLightbox">&#10006;</a>
 			<img src="" alt="artworks" class="galleryImg">
 		</section>
     </div>
@@ -31,19 +31,26 @@ export default {
         setLightbox(event) {
             let picNum = event.target.dataset.gallery;
             let galleryImg = document.querySelector(".galleryImg");
+            let galleryCon = document.querySelector(".galleryCon");
             
-            galleryImg.src = `images/${this.compData.abbr}-thumb-${picNum}.jpg`;
+            galleryImg.src = `images/${this.compData.abbr}-view-${picNum}.jpg`;
             console.log("clicked on a pic " + galleryImg.src);
 
             let galleryLightbox = document.querySelector(".galleryLightbox");
             galleryLightbox.classList.add("showLightbox");
-            galleryLightbox.style.top = `${document.documentElement.scrollTop + 100}px`;
+            galleryLightbox.style.top = `${document.documentElement.scrollTop + 25}px`;
+
+            galleryCon.style.paddingBottom = "100vh";
+
            
         },
 
         closeLightbox() {
             let galleryLightbox = document.querySelector(".galleryLightbox");
+            let galleryCon = document.querySelector(".galleryCon");
+
             galleryLightbox.classList.remove("showLightbox");
+            galleryCon.style.paddingBottom = "0";
         }
     }
 }

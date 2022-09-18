@@ -10,6 +10,10 @@ export default {
 		<p id="projYear"><span>Year</span> {{ compData.year }}</p>
 		<p id="projCategory"><span>Category</span> {{ compData.category }}</p>
 		<p id="projRole"><span>Role</span> {{ compData.role }}</p>
+        <p id="projLink" v-if="compData.link">
+            <span>Link</span>
+            Vist the site <a :href="compData.link" target="__blank">here</a>
+        </p>
 		<p id="projDesc1">{{ compData.descMain }}</p>
         <div id="projPart2">
 		    <img :src='"images/" + compData.animatePic' alt="compData.title" id="projPic2">
