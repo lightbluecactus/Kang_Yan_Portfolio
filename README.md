@@ -5,13 +5,15 @@ This is a portfolio site of mine, it includes some of my projects as web develop
 Need a browser and a local server to open index.html.
 
 ## Usage
-download WAMP/MAMP/LAMP depend on your system, dowonload this project or `git clone` to your server directory, run localhost, open browser and go to localhost/Kang_Yan_Portfolio, Then you should see the web page.
+download WAMP/MAMP/LAMP depend on your system, dowonload this project or `git clone` to your server directory.  
+Import database file database/db_rsdportfolio.sql into your phpMyAdmin.  
+Run localhost, open browser and go to localhost/Kang_Yan_Portfolio, Then you will see the web page.
 
 
 ## Further plans
-* gallery lightbox function debugging
 
-* add page controller function
+* Add page controller function   
+* Research on socialMediaHeader behaviour  
 
 ## License
 MIT License

@@ -10,6 +10,17 @@
 @import "modules/contact";
 
 
+// z-index order
+// #mainNav: 5 
+// #logoNav: 10
+//  #aboutMe: 5
+//  #aboutMe img: 1
+// .homeLightbox video: 15
+// .galleryImg, .defaultGalleryImg: 5
+// .socialMediaHeader: 5
+// #homeProjects: -1
+
+
 // general styles
 
 .hidden{
@@ -40,7 +51,7 @@
 
 #mainNav a
 {
-	color: $white;
+	color: #b0b0b0;
 	font-size: 26px;
 	font-family: $sub-font;
 	display: block;
@@ -56,7 +67,8 @@
 
 #mainNav a:hover
 {
-	color: #d0d0d0;
+	color: $white;
+	text-shadow: 0 0 10px $white;
 }
 
 main
@@ -76,7 +88,7 @@ main
 }
 
 #logoNav:hover {
-	filter:brightness(1.2);
+	filter:brightness(1.4);
 }
 
 

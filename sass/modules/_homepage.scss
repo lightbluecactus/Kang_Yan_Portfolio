@@ -1,5 +1,5 @@
 #socialMediaHeader {
-    height: 90px;
+    height: 80px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -7,10 +7,11 @@
     position: absolute;
     top: 40px;
     left: 115px;
+    z-index: 5;
 }
 
 #socialMediaHeader img {
-    height: 25px;
+    height: 22px;
 }
 
 #hero {
@@ -26,7 +27,7 @@
     margin-top: 45vh;
     margin-left: auto;
     margin-right: 10vw;
-    max-width: 60%;
+    max-width: 50%;
     border-left: 10px solid $purple;
     padding-left: 30px;
     // position: relative;
@@ -105,31 +106,68 @@
 }
 //--------end of video lightbox-----
 
-#homeProjects {
-    // background: url('../images/home-projects.jpg') center no-repeat;
-    // background-size: cover;
-    margin: 20vh 11vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+
+//--------start of #homeProjects and parallax part-----
+.parallaxWrapper {
+    height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	/*perspective controls z-axis*/
+	perspective: 300px;
+}
+
+.ParallaxGroup {
     position: relative;
+	/*to preserve depth of field*/
+	transform-style: preserve-3d;
+}
+
+#homeProjects {
+    height: 100vh;
+    z-index: -1
+}
+
+// #homeProjects {
+//     // background: url('../images/home-projects.jpg') center no-repeat;
+//     // background-size: cover;
+//     margin: 20vh 11vw;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: flex-end;
+//     position: relative;
+// }
+
+//  button {
+//     padding: 9px 12px;
+//     position: absolute;
+//     top: 75px;
+// }
+
+.parallaxLayer {
+    position: absolute;
+	inset: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.baseLayer {
+	transform: translateZ(-300px) scale(2);
 }
 
 #homeProjects button {
-    padding: 9px 12px;
-    position: absolute;
-    top: 75px;
+    padding: 15px 12px;
 }
 
 #homeProjects button a {
     color: $white;
-    font-size: 24px;
+    font-size: 20px;
     font-family: $main-font;
 }
 
 #homeProjects button a:hover  {
-    font-size: 22px;
+    font-size: 18px;
     color: $mint-glow;
 }
 
@@ -190,7 +228,11 @@
     #socialMediaHeader {
         height: 100px;
         top: 40px;
-        left: 200px;
+        left: 135px;
+    }
+
+    #socialMediaHeader img {
+        height: 25px;
     }
 
     #heroLogo {
@@ -209,10 +251,9 @@
         max-width: 65%;
     }
 
-    #homeProjects button {
-        padding: 15px 20px;
-        top: 150px;
-    }
+    // #homeProjects button {
+    //     top: 150px;
+    // }
 
     #homeProjects button a {
         font-size: 32px;
@@ -242,5 +283,14 @@
     #homeAction ul img {
         width: 40px;
         height: 40px;
+    }
+}
+
+
+@media screen and (min-width: 960px) {
+    #socialMediaHeader {
+        height: 100px;
+        top: 40px;
+        left: 200px;
     }
 }
