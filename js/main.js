@@ -8,6 +8,7 @@
 			lightbox = document.querySelector(".homeLightbox"),
 			vid = document.querySelector("video"),
 			close = document.querySelector(".close");
+			//socialMediaHeader = document.querySelector(".socialMediaHeader");
 
 	let toggle = false;
 
@@ -45,12 +46,28 @@
 	}
 
 
+	// // homepage socialMediaHeader
+	// function hideSocialMediaHeader() {
+	// 	if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+	// 		socialMediaHeader.style.display = "none";
+	// 		console.log("hiding socialMediaHeader");
+	// 	} else {
+	// 		socialMediaHeader.style.display = "block";
+	// 		console.log("displaying socialMediaHeader");
+	// 	}
+	// 	// if(document.className.includes("socialMediaHeader")) {
+			
+	// 	// }
+	// }
+
+
 	logoNav.addEventListener("click", toggleNav);
 
 	btnPlay.addEventListener("click", popLightbox);
 	vid.addEventListener("ended", autoClose);
 	close.addEventListener("click", closeVideo);
 
+	//window.addEventListener("scroll", hideSocialMediaHeader);
 
 
 })();
