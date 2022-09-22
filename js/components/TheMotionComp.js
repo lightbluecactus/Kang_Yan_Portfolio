@@ -47,10 +47,10 @@ export default {
 
         closeLightbox() {
             let galleryLightbox = document.querySelector(".galleryLightbox");
-            let galleryCon = document.querySelector(".galleryCon");
+            let galleryImg = document.querySelector(".galleryImg");
 
             galleryLightbox.classList.remove("showLightbox");
-            galleryCon.style.paddingBottom = "0";
+            galleryImg.src = "";
         }
     }
 }

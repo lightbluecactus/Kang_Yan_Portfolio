@@ -10,9 +10,12 @@ export default {
     `,
 
     methods: {
-        showmydata() {
-            window.scroll(0, 0);
+        showmydata(event) {
             this.$emit("showdata", this.piece);
+
+            // marks viewed item
+            // only controls one projNav at a time, cannot control all
+            event.target.style.filter = "brightness(1.7)";
         }
     }
 

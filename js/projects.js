@@ -19,6 +19,7 @@ import TheProjects from "./components/TheProjectsComp.js";
 
 		methods: {
 			showProjData(item) {
+				window.scroll(0, 0);
 				this.currentProject = item;
 				this.isVisible = true;
 				console.log(item);
@@ -40,7 +41,10 @@ import TheProjects from "./components/TheProjectsComp.js";
 
 			closeDefaultLightbox() {
 				let defaultGalleryLb = document.querySelector(".defaultGalleryLb");
+				let defaultGalleryImg = document.querySelector(".defaultGalleryImg");
+
 				defaultGalleryLb.classList.remove("showLightbox");
+				defaultGalleryImg.src = "";
 			}
 		},
 

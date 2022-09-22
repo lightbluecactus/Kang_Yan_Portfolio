@@ -31,7 +31,7 @@
      top: 30vh;
      width: 300px;
      z-index: 1;
-     filter: brightness(0.9);
+     filter: brightness(0.7);
  }
 
  #education h2, #languge h2, #software h2, #interestingFact h2 {
@@ -111,6 +111,7 @@
     #aboutMe img {
         top: 20vh;
         width: 450px;
+        filter: brightness(0.9);
     }
 
     #aboutMe p {
