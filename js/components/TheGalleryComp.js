@@ -17,16 +17,16 @@ export default {
 	    <p id="projDesc1">{{ compData.descMain }}</p>
         <div class="galleryCon">
             <img src="images/gallery-thumb-1.jpg" @click="setLightbox" class="galleryThumb" alt="gallery thumbnail" data-gallery="1" data-gallerydesc="Field study in Hebei, photography, June 5 2016">
-            <img src="images/gallery-thumb-2.jpg" @click="setLightbox" class="galleryThumb" alt="gallery thumbnail" data-gallery="2" data-gallerydesc="Ms. Seikai, digital illustration, February, 2021">
+            <img src="images/gallery-thumb-2.jpg" @click="setLightbox" class="galleryThumb" alt="gallery thumbnail" data-gallery="2" data-gallerydesc="Fanart of Ms. Seikai, digital illustration, February, 2021">
             <img src="images/gallery-thumb-3.jpg" @click="setLightbox" class="galleryThumb" alt="gallery thumbnail" data-gallery="3" data-gallerydesc="Toronto night view, photography, May 28 2021">
             <img src="images/gallery-thumb-4.jpg" @click="setLightbox" class="galleryThumb" alt="gallery thumbnail" data-gallery="4" data-gallerydesc="Original character, digital illustration, July 2021">
             <img src="images/gallery-thumb-5.jpg" @click="setLightbox" class="galleryThumb" alt="gallery thumbnail" data-gallery="5" data-gallerydesc="Field study in Hebei, photography, June 6 2016">
             <img src="images/gallery-thumb-6.jpg" @click="setLightbox" class="galleryThumb" alt="gallery thumbnail" data-gallery="6" data-gallerydesc="Field study in Hebei, photography, June 6 2016">
             <img src="images/gallery-thumb-7.jpg" @click="setLightbox" class="galleryThumb" alt="gallery thumbnail" data-gallery="7" data-gallerydesc="Art Gallery of Ontario, photography, July 23 2021">
-            <img src="images/gallery-thumb-8.jpg" @click="setLightbox" class="galleryThumb" alt="gallery thumbnail" data-gallery="8" data-gallerydesc="donut modeling using Blender, December 29 2021">
+            <img src="images/gallery-thumb-8.jpg" @click="setLightbox" class="galleryThumb" alt="gallery thumbnail" data-gallery="8" data-gallerydesc="Donut modeling using Blender, December 29 2021">
             <img src="images/gallery-thumb-9.jpg" @click="setLightbox" class="galleryThumb" alt="gallery thumbnail" data-gallery="9" data-gallerydesc="A dream, digital illustration, August 2022">
             <img src="images/gallery-thumb-10.jpg" @click="setLightbox" class="galleryThumb" alt="gallery thumbnail" data-gallery="10" data-gallerydesc="Fanart, digital illustration, June 2022">
-            <img src="images/gallery-thumb-11.jpg" @click="setLightbox" class="galleryThumb" alt="gallery thumbnail" data-gallery="11" data-gallerydesc="Original world map, digital illustration, September 2021">
+            <img src="images/gallery-thumb-11.jpg" @click="setLightbox" class="galleryThumb" alt="gallery thumbnail" data-gallery="11" data-gallerydesc="Map of original fantasy world, digital illustration, September 2021">
             <img src="images/gallery-thumb-12.jpg" @click="setLightbox" class="galleryThumb" alt="gallery thumbnail" data-gallery="12" data-gallerydesc="Field study in Hebei, photography, June 5 2016">
             <section class="galleryLightbox">
 			    <h2 class="hidden">Artworks Viewer</h2>
@@ -58,7 +58,10 @@ export default {
 
         closeLightbox() {
             let galleryLightbox = document.querySelector(".galleryLightbox");
+            let galleryImg = document.querySelector(".galleryImg");
+
             galleryLightbox.classList.remove("showLightbox");
+            galleryImg.src = "";
         }
     } 
 }

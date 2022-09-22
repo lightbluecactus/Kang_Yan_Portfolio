@@ -58,7 +58,13 @@
 	
 				<section class="ParallaxGroup" id="homeProjects">
 					<div class="paralaxLayer baseLayer">
-						<img src="images/home-projects.jpg" alt="projects background">
+						<img 
+							srcset="images/home-projects-600w.jpg 600w, 
+									images/home-projects-1600w.jpg 1600w"
+							sizes="(max-width: 500px) 600w, 1600w"
+							src="images/home-projects-600w.jpg" 
+							alt="projects background"
+						>
 					</div>
 					<div class="parallaxLayer midLayer">
 						<button class="btnHover">

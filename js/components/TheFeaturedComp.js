@@ -59,7 +59,10 @@ export default {
 
         closeLightbox() {
             let galleryLightbox = document.querySelector(".galleryLightbox");
+            let galleryImg = document.querySelector(".galleryImg");
+            
             galleryLightbox.classList.remove("showLightbox");
+            galleryImg.src = "";
         }
     } 
 }

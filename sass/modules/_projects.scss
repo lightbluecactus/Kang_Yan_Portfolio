@@ -16,16 +16,17 @@
  }
 
  #projectNavCon img {
-     width: 120px;
+     width: 90px;
      margin-bottom: 10px;
      margin-left: -20px;
+     filter: brightness(0.7);
      transition: all .5s ease-out;
      cursor: pointer;
  }
 
  #projectNavCon img:hover {
      margin-left: 0;
-     filter: brightness(1.5);
+     filter: brightness(1.1);
  }
 
 //  #btnLeft {
@@ -85,7 +86,7 @@
 }
 
 #projPic2 {
-    max-width: 300px;
+    max-width: 200px;
 }
 
 #projPart2 p {
@@ -119,17 +120,17 @@
 
 // ------- start of GalleryCon and TheGalleryComp --------
 .galleryCon {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
     
-    .galleryPosterCon {   
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+.galleryPosterCon {   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 
 .galleryCon {
@@ -166,9 +167,9 @@
 .galleryLightbox, .defaultGalleryLb {
     display: none;
 	position: absolute;
-	left: 10vw;
+	left: 0;
     //set top in JS so that lightbox appear by scroll position, but still scrollable
-	width: 80vw;
+	width: 100%;  // will appear overflow if use 100vw
 	align-items: center;
 	padding: 0;
 	background-color: rgba(0, 0, 0, 0.7);
@@ -209,7 +210,8 @@
 }
 
 .galleryDesc {
-    text-align: left;
+    text-align: center;
+    width: 75vw;
     margin-bottom: 20px;
 }
 
@@ -261,10 +263,18 @@
         margin-top: 5vh;
     }
 
+    #projPic2 {
+        max-width: 300px;
+    }
+
     
 }
 
 @media screen and (min-width: 824px) {
+    #projectNavCon img {
+        width: 150px;
+    }
+
     .galleryCon {
         flex-direction: row;
         flex-wrap: wrap;
@@ -294,9 +304,7 @@
 
  
 @media screen and (min-width: 960px) {
-    #projectNavCon img {
-        width: 150px;
-    }
+    
 
     #projPart2 {
         flex-direction: row;

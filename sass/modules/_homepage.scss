@@ -6,7 +6,7 @@
     align-items: flex-start;
     position: absolute;
     top: 40px;
-    left: 115px;
+    left: 90px;
     z-index: 5;
 }
 
@@ -44,7 +44,7 @@
 // }
 
 #hero h2 {
-    font-size: 18px;
+    font-size: 14px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: 10vw;
@@ -224,6 +224,13 @@
 
 
 // media queries
+@media screen and (min-width: 500px) {
+    #hero h2 {
+        font-size: 17px;
+    }
+}
+
+
 @media screen and (min-width: 768px) {
     #socialMediaHeader {
         height: 100px;
